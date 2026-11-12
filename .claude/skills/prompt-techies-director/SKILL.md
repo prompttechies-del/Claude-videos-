@@ -20,8 +20,11 @@ voice, sound, edit). Do the steps in order. Do not render until step 5 is writte
    whoosh, click, hit or riser. Silence only as a deliberate pause before a payoff.
 5. **The camera never sits still.** Slow push-in, orbit or drift on every shot;
    a fast move on every transition.
-6. **Check, then iterate.** Expect several versions. Review frames after each
-   render and fix the weakest shot first.
+6. **Check every frame twice.** After each render, review a contact sheet once for
+   story and timing, then again for polish (clipped text, dark shots, covered
+   faces). Expect several versions; fix the weakest shot first.
+7. **Taste: no slop.** Nothing generic: no stock gradients, no default fonts, no
+   filler shots. If a shot could belong to any video, redo it for this one.
 
 ## Workflow
 
