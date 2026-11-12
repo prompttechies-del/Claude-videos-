@@ -56,3 +56,7 @@ Tools: `pip install gradio_client kokoro-onnx soundfile numpy`, and `ffmpeg`.
 - Clips are generated at 480x832 and upscaled, so they are slightly soft.
 - The voice model speaks English and Hindi, not Telugu.
 - Real people, brands and copyrighted characters must not be generated.
+
+## Realism
+
+Follow `../free-4k-video-render/references/realism.md` for every scene (surfaces, light, props, shadows, voice, foley).

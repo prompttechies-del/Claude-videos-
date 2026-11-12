@@ -203,3 +203,10 @@ renders each to `out/<slug>/`, mixes the music if given, burns captions if given
 runs ffprobe and fails loudly on a wrong resolution, an fps mismatch, missing audio when audio was expected,
 true peak above −1 dBTP, or a file over the platform's size limit. Prints a ✅/❌ report and exits non-zero on ❌.
 `render4k.sh`, `export_all.sh` and `batch.py` call it on every output.
+
+## 16. Realism standard (every video)
+
+Every 3D, hand-drawn, motion-graphics or AI scene follows `references/realism.md`: textured surfaces (wood grain,
+plank joints, plaster, glass reflections), one real key light with cast shadows, practical lights, 4–6 real props,
+contact shadows, natural voice and matched foley. Check one still at full size and a contact sheet before any
+long render. For the Prompt Techies Reel, render 3D at 2112×1188 (the 4K panel is about 2080 px wide).

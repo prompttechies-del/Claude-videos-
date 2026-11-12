@@ -25,3 +25,7 @@ commit `0ac8bf2`). It was a starter kit, not a packaged skill; this file wraps i
 - Pass `--chrome=/opt/pw-browsers/chromium` if Chrome is not found.
 - The guide's house rules include no on-screen text; add titles and captions in a
   separate edit step if the reel needs them.
+
+## Realism
+
+Follow `../free-4k-video-render/references/realism.md`: keep the hand-drawn look, but add believable surface texture, light direction and contact shadows, and natural narration with matched foley.
