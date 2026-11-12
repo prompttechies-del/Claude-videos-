@@ -71,3 +71,24 @@ Extract a contact sheet (one frame per 2 s) and check:
 - Too dark? Does the ending hold long enough to read (≥ 2 s)?
 Fix, re-render the changed shots, and re-check. Report what was not verified
 (audio cannot be listened to in the cloud session — ask the user to play it).
+
+## Crew skills (installed alongside; load the one each step needs)
+
+| Step | Skill |
+|---|---|
+| Beat sheet and shot list | `video-storyboard` |
+| Motion rules (easing, anticipation, overshoot) | `motion-design-principles` |
+| Kinetic captions | `kinetic-typography` |
+| Palette, glow, depth | `motion-color-and-light` |
+| Sound effects, music, ducking | `sound-and-music-sync`, `media-use` |
+| HTML + GSAP scenes rendered to video | `hyperframes`, `hyperframes-cli`, `hyperframes-registry` |
+| Full beat-synced video in one pass | `motion-video` |
+| Rebuild a reference video shot by shot | `reverse-any-video` |
+| A proven episode style | `style-sampling` |
+| Platform cuts and safe zones | `social-video-formatter` |
+| 3D character scenes | `anidoodle` |
+| 4K render, Reel layout, verification | `free-4k-video-render` |
+
+Use free, local options only (Kokoro voice, synthesized or royalty-free sound).
+Skip any paid provider these skills mention (for example HeyGen) unless the user
+asks for it. Third-party skills keep their own LICENSE file (MIT or Apache-2.0).
