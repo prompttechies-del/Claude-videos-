@@ -26,3 +26,21 @@ Works in the cloud container with no screen and no GPU.
 
 ## Characters
 Clawd (blue) and the helper (orange, headphones) as rounded blocks with eyes and mouth; no eyebrows, no cheek dots, no dark outline strokes. Expressions through eye size, mouth shape, squash and stretch.
+
+## Before every render
+Run `bash .claude/skills/blender-reel-3d/scripts/preflight.sh`; fix anything MISSING first. Then render 4-6 test stills at 540x960
+(`NFR=1 blender -b -P scene.py -- BLENDER_EEVEE 540 960 12 //p/f# <frame>`), look at them, and only then start the full render.
+Write the assembly so it waits for the last frame and checks the output length; a contact sheet of the final video must show the end card.
+
+## Stories and characters
+- Story per Reel: hook (problem) -> helper arrives -> solution shown -> payoff and call to action. One beat per voice line.
+- Characters are voxel builds (cubes in one mesh per body part) parented to empties, so each part can be keyframed:
+  body (squash/stretch, hop), eyes (blink = scale z 0.12 for 3 frames), mouth, arms, legs (walk cycle = alternate leg rotation +-25 deg at 2 steps/s).
+- Blocky humans (Minecraft/Roblox style): head, torso, two arms, two legs as boxes with skin, shirt and trousers colours; walk in, sit, gesture.
+  No photoreal humans: this machine cannot render them convincingly.
+- Talking: give each character its own Kokoro voice (e.g. af_heart, am_michael, bf_emma, am_adam). Drive the mouth from the voice track:
+  mouth open = RMS loudness of the line per frame (numpy over the WAV, 24 values a second), smoothed, mapped to mouth scale 0.2-1.0.
+  The character who is not speaking keeps its mouth closed and looks at the speaker.
+- Brand logos: `assets/brand-logos/` (3,470 SVGs, CC0, with official colours in index.json). Use a logo only to name the product
+  being discussed; never suggest the brand endorses the video. OpenAI and Microsoft logos are not in the set.
+- Budget: about 20 s per 1080x1920 EEVEE frame here; each extra character adds time. Plan 2-3 hours per Reel.
