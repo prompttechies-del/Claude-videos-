@@ -2,3 +2,5 @@ node_modules/
 videos/
 assets/templates/*/
 assets/3d/*/
+films/*/assets/
+films/*/.film/
