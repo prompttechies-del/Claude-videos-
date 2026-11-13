@@ -4,3 +4,4 @@ assets/templates/*/
 assets/3d/*/
 films/*/assets/
 films/*/.film/
+films/*.zip
