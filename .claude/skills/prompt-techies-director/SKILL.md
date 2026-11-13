@@ -86,7 +86,7 @@ Fix, re-render the changed shots, and re-check. Report what was not verified
 | Rebuild a reference video shot by shot | `reverse-any-video` |
 | A proven episode style | `style-sampling` |
 | Platform cuts and safe zones | `social-video-formatter` |
-| 3D character scenes | `anidoodle` |
+| 3D character scenes | `blender-reel-3d` (real Blender), `create-3d-scene`, `script-blender-automation`, `render-blender-output`, `anidoodle` |
 | 4K render, Reel layout, verification | `free-4k-video-render` |
 
 Use free, local options only (Kokoro voice, synthesized or royalty-free sound).
