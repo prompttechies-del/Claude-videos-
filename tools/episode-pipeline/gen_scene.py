@@ -59,6 +59,11 @@ w("""def dim(l):
 """)
 w("def animate(t,FRi):")
 w("    camera(t,SHOTS)")
+for n in ("clawd","bit","null"):
+    if n in cast:
+        w(f"    {n}.R.rotation_euler=(0,0,0); {n}.R.location.x={cast[n][0]}; {n}.R.location.y={cast[n][1]}; {n}.R.scale=(1,1,1); {n}.B.rotation_euler=(0,0,0); {n}.armL.rotation_euler=(0,0,0); {n}.armR.rotation_euler=(0,0,0)")
+if "maya" in cast:
+    w(f"    maya.R.rotation_euler=(0,0,0); maya.R.location.x={cast['maya'][0]}; maya.armL.rotation_euler=(0,0,0); maya.armR.rotation_euler=(0,0,0); maya.H.rotation_euler=(0,0,0)")
 # screens timeline
 sc=C.get("screens",[])
 if sc:
