@@ -1,0 +1,14 @@
+{"cards":[
+ {"k":"s","txt":"every app","t":[0.35,2.2]},
+ {"k":"b","txt":"TURNED RED!","size":160,"col":"#FF3B3B","t":[0.9,2.2],"shake":34},
+ {"k":"s","txt":"lock it down","t":[2.4,4.6]},
+ {"k":"b","txt":"2FA","size":280,"col":"#27E0D0","t":[4.6,6.3]},
+ {"k":"b","txt":"PASSWORD MANAGER","size":100,"col":"#FFC233","t":[6.3,7.95]},
+ {"k":"card","y":300,"txt":"Ask AI: “List the 5 accounts I should protect first.”","col":"#27E0D0","t":[9.6,13.0]},
+ {"k":"m","txt":"EMAIL · BANK · PHONE","size":90,"y":300,"col":"#3CDC82","t":[13.2,15.35]},
+ {"k":"m","txt":"CLOUD · SOCIAL","size":90,"y":420,"col":"#3CDC82","t":[14.0,15.35]},
+ {"k":"s","txt":"except one","t":[15.5,17.6]},
+ {"k":"b","txt":"HOME","size":280,"col":"#FF3B3B","t":[16.3,17.6],"shake":32},
+ {"k":"s","txt":"that's where","t":[17.8,20.57]},
+ {"k":"b","txt":"I LIVE.","size":220,"col":"#FF3B3B","t":[18.3,20.57]}],
+ "end1":"what's he doing there? →","end2":"DAY 12 DROPS TOMORROW"}

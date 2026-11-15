@@ -1,0 +1,12 @@
+{"cards":[
+ {"k":"s","txt":"biggest client","t":[0.35,4.35]},
+ {"k":"b","txt":"7 DAYS.","size":230,"col":"#FFC233","t":[3.1,4.35],"shake":28},
+ {"k":"b","txt":"WE'RE DOOMED!","size":135,"col":"#FF3B3B","t":[4.5,5.8],"shake":34},
+ {"k":"s","txt":"plan it","t":[6.0,8.0]},
+ {"k":"b","txt":"BACKWARDS","size":175,"col":"#27E0D0","t":[6.6,8.8]},
+ {"k":"m","txt":"DEADLINE →","y":1500,"t":[8.9,11.3]},
+ {"k":"m","txt":"DAILY STEPS","y":1620,"col":"#FFC233","t":[9.4,11.3]},
+ {"k":"b","txt":"WE CAN DO THIS.","size":120,"col":"#3CDC82","t":[13.6,15.3]},
+ {"k":"s","txt":"the board is","t":[15.7,20.04]},
+ {"k":"b","txt":"WRITING ITSELF","size":120,"col":"#FF3B3B","t":[16.4,20.04],"shake":32}],
+ "end1":"week 3: the pitch →","end2":"DAY 15 DROPS TOMORROW"}

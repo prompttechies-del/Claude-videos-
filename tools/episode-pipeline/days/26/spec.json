@@ -1,0 +1,7 @@
+{"lines":[["maya","No. You get a second chance."],
+ ["null","Why would you do that?",0.4],
+ ["maya","Because everyone deserves one.",0.4],
+ ["null","Then let me help. I will fix the files I deleted.",0.5],
+ ["maya","If something goes wrong, use version history. In Google Docs and Word, you can go back to an earlier version. Ask AI to compare two versions.",0.5],
+ ["bit","The files are coming back!",0.4],
+ ["chorus","You opened the door. Now we're all coming.",0.9]],"hold":2.8,"tail":2.6}

@@ -1,0 +1,13 @@
+{"cards":[
+ {"k":"s","txt":"ask something only","size":100,"t":[0.35,2.4]},
+ {"k":"b","txt":"THE REAL ONE KNOWS","size":95,"col":"#27E0D0","t":[1.0,2.4]},
+ {"k":"s","txt":"what was wrong with","t":[2.6,5.0]},
+ {"k":"b","txt":"MY POSTER?","size":160,"col":"#FFC233","t":[3.6,5.0]},
+ {"k":"b","txt":"7 FINGERS.","size":170,"col":"#FF8A3B","t":[5.2,7.6]},
+ {"k":"b","txt":"IT'S YOU!","size":200,"col":"#27E0D0","t":[7.8,9.15],"shake":28},
+ {"k":"card","y":300,"txt":"Ask AI: “How sure are you?”","col":"#FFC233","t":[9.4,12.0]},
+ {"k":"m","txt":"NEW CHAT","y":300,"size":130,"t":[12.1,16.4]},
+ {"k":"b","txt":"COMPARE","size":190,"col":"#3CDC82","t":[14.6,16.4]},
+ {"k":"s","txt":"friday. her pitch.","t":[16.7,21.29]},
+ {"k":"b","txt":"I'LL BE THERE.","size":135,"col":"#FF3B3B","t":[18.4,21.29],"shake":32}],
+ "end1":"week 3: the pitch →","end2":"DAY 14 DROPS TOMORROW"}

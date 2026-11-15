@@ -1,0 +1,13 @@
+{"cards":[
+ {"k":"b","txt":"I'M THE REAL ONE!","size":110,"col":"#FFC233","t":[1.6,3.25]},
+ {"k":"b","txt":"NO, I AM!","size":180,"col":"#FF8A3B","t":[3.3,5.05],"shake":30},
+ {"k":"s","txt":"you both sound","t":[5.3,9.0]},
+ {"k":"b","txt":"SURE.","size":240,"col":"#FF3B3B","t":[6.4,9.0]},
+ {"k":"s","txt":"confident ≠","t":[9.2,11.5]},
+ {"k":"b","txt":"CORRECT","size":180,"col":"#FF3B3B","t":[9.9,11.5]},
+ {"k":"lab","txt":"ASK FOR SOURCES","x":120,"y":300,"col":"#FFC233","t":[11.6,14.9]},
+ {"k":"lab","txt":"CHECK ONE","x":420,"y":440,"col":"#27E0D0","t":[13.2,14.9]},
+ {"k":"s","txt":"I choose...","t":[15.2,16.9]},
+ {"k":"b","txt":"YOU.","size":260,"col":"#27E0D0","t":[16.0,16.9]},
+ {"k":"b","txt":"WRONG ONE?","size":160,"col":"#FF3B3B","t":[17.6,21.1],"shake":34}],
+ "end1":"did she pick right? →","end2":"DAY 13 DROPS TOMORROW"}

@@ -1,0 +1,15 @@
+{"cards":[
+ {"k":"s","txt":"my AI poster","t":[0.35,3.5]},
+ {"k":"b","txt":"LOOKS GREAT?","size":150,"col":"#FFC233","t":[1.6,3.5]},
+ {"k":"b","txt":"7 FINGERS?!","size":170,"col":"#FF3B3B","t":[3.62,5.1],"shake":34},
+ {"k":"s","txt":"always check","t":[5.2,7.75]},
+ {"k":"b","txt":"3 THINGS","size":180,"col":"#27E0D0","t":[6.5,7.75]},
+ {"k":"m","txt":"1 · HANDS","col":"#FF5A4A","t":[7.8,8.55]},
+ {"k":"m","txt":"2 · TEXT","col":"#FFC233","t":[8.6,9.3]},
+ {"k":"m","txt":"3 · REFLECTIONS","size":100,"col":"#27E0D0","t":[9.32,10.35]},
+ {"k":"m","txt":"CAMERA · LENS · LIGHT","size":88,"y":300,"t":[10.5,17.3]},
+ {"k":"card","y":420,"txt":"“shot on 50mm, soft window light, shallow depth of field”","col":"#27E0D0","t":[13.0,17.3]},
+ {"k":"b","txt":"REAL PHOTO.","size":160,"col":"#27E0D0","t":[17.5,20.2]},
+ {"k":"s","txt":"what is that","t":[20.3,22.91]},
+ {"k":"b","txt":"IN THE CORNER?","size":120,"col":"#FF3B3B","t":[21.0,22.91],"shake":30}],
+ "end1":"zoom in. →","end2":"DAY 6 DROPS TOMORROW"}

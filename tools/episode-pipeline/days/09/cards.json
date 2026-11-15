@@ -1,0 +1,14 @@
+{"cards":[
+ {"k":"s","txt":"send the payment","t":[0.35,4.0]},
+ {"k":"b","txt":"IT'S URGENT.","size":150,"col":"#FF3B3B","t":[2.6,4.0],"shake":28},
+ {"k":"b","txt":"WAIT!","size":260,"col":"#FFC233","t":[6.4,7.6],"shake":34},
+ {"k":"lab","txt":"NO BLINKING","x":90,"y":300,"col":"#FF5A4A","t":[7.7,10.2]},
+ {"k":"lab","txt":"LIPS OUT OF SYNC","x":330,"y":440,"col":"#FFC233","t":[8.7,10.2]},
+ {"k":"m","txt":"URGENT + MONEY","y":300,"size":105,"t":[10.5,15.2]},
+ {"k":"b","txt":"= STOP","size":220,"col":"#FF3B3B","t":[11.6,15.2],"shake":30},
+ {"k":"card","y":640,"txt":"Hang up. Call back on a number you already have.","col":"#27E0D0","t":[12.8,15.2]},
+ {"k":"s","txt":"calling his","t":[15.4,18.0]},
+ {"k":"b","txt":"REAL NUMBER","size":150,"col":"#27E0D0","t":[16.2,18.0]},
+ {"k":"s","txt":"clever,","t":[18.3,21.8]},
+ {"k":"b","txt":"LITTLE COPY.","size":150,"col":"#FF3B3B","t":[19.0,21.8],"shake":32}],
+ "end1":"he's getting closer →","end2":"DAY 10 DROPS TOMORROW"}

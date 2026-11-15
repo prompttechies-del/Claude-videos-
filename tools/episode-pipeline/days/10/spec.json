@@ -1,0 +1,5 @@
+{"lines":[["bit","Ooh! I won a free AI subscription! Click!"],
+ ["clawd","Nooo!",0.2],
+ ["clawd","Look at the sender. A zero instead of an O. Paste it into AI and ask: what signs of phishing does this have?",0.5],
+ ["clawd","Hover over links before you click. And never type a password from an email link.",0.4],
+ ["bit","Um. Clawd? I clicked one yesterday.",0.6,"whisper"]],"hold":2.6,"tail":2.6}

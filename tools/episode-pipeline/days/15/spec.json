@@ -1,0 +1,5 @@
+{"lines":[["maya","Electric scooters? I know nothing about electric scooters."],
+ ["clawd","Then let's research. Fast.",0.3],
+ ["clawd","Ask AI to research with sources, and list the five things a client in this industry worries about most.",0.3],
+ ["clawd","Then verify the facts. Your pitch answers those five worries.",0.3],
+ ["bit","Clawd. Look at source number three.",0.6,"whisper"]],"hold":2.8,"tail":2.6}

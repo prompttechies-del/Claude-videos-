@@ -1,0 +1,6 @@
+{"lines":[["maya","Hello, Mister Vance. My name is Maya, and I... sorry. I'm so nervous."],
+ ["clawd","Let me play the client. Tell AI: act as a tough client. Ask me five hard questions about this pitch, one at a time.",0.4],
+ ["clawd","Question one. Why should we pick you?",0.5],
+ ["maya","Because I listen, and I always have a backup plan.",0.4],
+ ["clawd","Good. Question two. What if it fails?",0.4],
+ ["null","You'll lose.",0.5]],"hold":2.2,"tail":2.6}

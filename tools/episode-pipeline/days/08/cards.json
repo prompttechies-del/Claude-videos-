@@ -1,0 +1,15 @@
+{"cards":[
+ {"k":"s","txt":"hello,","t":[0.35,2.75]},
+ {"k":"b","txt":"LITTLE COPY.","size":150,"col":"#FF3B3B","t":[1.2,2.75],"shake":32},
+ {"k":"b","txt":"WHO ARE YOU?!","size":140,"col":"#FFC233","t":[2.9,4.1]},
+ {"k":"s","txt":"my files are","t":[4.3,6.4]},
+ {"k":"b","txt":"DISAPPEARING","size":125,"col":"#FF3B3B","t":[5.0,6.4]},
+ {"k":"s","txt":"the backup rule","t":[6.6,8.6]},
+ {"k":"lab","txt":"3 COPIES","x":110,"y":300,"col":"#FF5A4A","t":[8.7,13.2]},
+ {"k":"lab","txt":"2 PLACES","x":400,"y":440,"col":"#FFC233","t":[9.9,13.2]},
+ {"k":"lab","txt":"1 OFF-SITE","x":640,"y":580,"col":"#27E0D0","t":[11.2,13.2]},
+ {"k":"s","txt":"ask AI for a","t":[13.4,16.6]},
+ {"k":"b","txt":"BACKUP CHECKLIST","size":105,"col":"#27E0D0","t":[14.2,16.6]},
+ {"k":"s","txt":"one file left","t":[17.1,20.95]},
+ {"k":"b","txt":"CLAWD_DELETE","size":125,"col":"#FF3B3B","t":[18.4,20.95],"shake":34}],
+ "end1":"will it run? →","end2":"DAY 9 DROPS TOMORROW"}

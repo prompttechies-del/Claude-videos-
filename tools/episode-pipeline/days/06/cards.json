@@ -1,0 +1,15 @@
+{"cards":[
+ {"k":"s","txt":"have you seen","t":[0.35,2.5]},
+ {"k":"b","txt":"THIS SYMBOL?","size":150,"col":"#FF3B3B","t":[1.1,2.5]},
+ {"k":"b","txt":"NOPE.","size":250,"col":"#27E0D0","t":[2.6,3.8],"shake":34},
+ {"k":"s","txt":"dig through","t":[3.9,6.2]},
+ {"k":"b","txt":"OLD FILES","size":170,"col":"#FFC233","t":[4.6,6.2]},
+ {"k":"s","txt":"too much to read?","t":[6.3,8.4]},
+ {"k":"b","txt":"5 BULLETS","size":170,"col":"#27E0D0","t":[8.5,11.0]},
+ {"k":"m","txt":"SUMMARISE →","y":300,"t":[11.1,13.4]},
+ {"k":"m","txt":"ASK WHAT'S MISSING","size":95,"y":430,"col":"#FFC233","t":[11.4,13.4]},
+ {"k":"s","txt":"a folder called","t":[13.6,17.6]},
+ {"k":"b","txt":"v0.1","size":260,"col":"#FF3B3B","t":[14.7,17.6],"shake":30},
+ {"k":"s","txt":"the first thing","t":[17.9,22.38]},
+ {"k":"b","txt":"I EVER SAID?","size":140,"col":"#FFC233","t":[18.7,22.38]}],
+ "end1":"what was it? →","end2":"DAY 7 DROPS TOMORROW"}

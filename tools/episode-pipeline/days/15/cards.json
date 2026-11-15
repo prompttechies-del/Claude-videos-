@@ -1,0 +1,12 @@
+{"cards":[
+ {"k":"s","txt":"I know nothing about","size":100,"t":[0.35,3.7]},
+ {"k":"b","txt":"E-SCOOTERS","size":160,"col":"#27E0D0","t":[1.4,3.7]},
+ {"k":"s","txt":"research.","t":[3.9,5.75]},
+ {"k":"b","txt":"FAST.","size":240,"col":"#FFC233","t":[4.6,5.75],"shake":28},
+ {"k":"card","y":300,"txt":"Ask AI: “Research with sources. List the 5 things a client in this industry worries about most.”","col":"#27E0D0","t":[6.0,12.2]},
+ {"k":"m","txt":"5 WORRIES =","y":300,"size":120,"t":[12.4,16.2]},
+ {"k":"b","txt":"YOUR PITCH","size":165,"col":"#FFC233","t":[13.3,16.2]},
+ {"k":"m","txt":"VERIFY THE FACTS","y":1560,"size":80,"col":"#3CDC82","t":[14.2,16.2]},
+ {"k":"s","txt":"source number three","size":100,"t":[16.5,20.47]},
+ {"k":"b","txt":"null-truth.net","size":130,"col":"#FF3B3B","t":[17.4,20.47],"shake":32}],
+ "end1":"who runs that site? →","end2":"DAY 16 DROPS TOMORROW"}

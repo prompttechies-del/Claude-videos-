@@ -1,0 +1,6 @@
+{"lines":[["vance","Maya. Send the payment details now. It's urgent."],
+ ["maya","Mister Vance? Okay, one second.",0.4],
+ ["clawd","Wait! He hasn't blinked once. And his lips don't match his voice.",0.3],
+ ["clawd","Urgent plus money means stop. Hang up, and call back on a number you already have.",0.4],
+ ["maya","You're right. I'm calling his real number.",0.3],
+ ["null","Clever, little copy.",0.8]],"hold":1.5,"tail":2.6}

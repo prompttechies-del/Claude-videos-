@@ -1,0 +1,6 @@
+{"lines":[["maya","Okay. My AI poster is done. Looks great, right?"],
+ ["bit","Aaah! She has seven fingers!",0.3],
+ ["clawd","Classic AI. Always check three things. The hands. The text. The reflections.",0.4],
+ ["clawd","Then add camera, lens and light to your prompt. Shot on fifty millimetre, soft window light, shallow depth of field.",0.4],
+ ["maya","Wow. Now it looks like a real photo.",0.3],
+ ["bit","Wait. What is that, in the corner?",0.8,"whisper"]],"hold":1.5,"tail":2.5}

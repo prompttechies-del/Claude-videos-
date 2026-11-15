@@ -1,0 +1,14 @@
+{"cards":[
+ {"k":"s","txt":"2 AM.","t":[0.35,3.1],"size":120},
+ {"k":"b","txt":"SLIDE 1: BLANK","size":120,"col":"#FF3B3B","t":[1.2,3.1]},
+ {"k":"s","txt":"don't panic.","t":[3.3,5.9]},
+ {"k":"b","txt":"AI OUTLINE","size":150,"col":"#27E0D0","t":[4.2,5.9]},
+ {"k":"m","txt":"7 SLIDES · 1 STORY","y":300,"size":85,"t":[6.2,12.4]},
+ {"k":"lab","txt":"PROBLEM · SOLUTION · PROOF","x":70,"y":440,"col":"#FFC233","t":[8.5,12.4]},
+ {"k":"lab","txt":"PRICE · NEXT STEP","x":220,"y":580,"col":"#27E0D0","t":[10.0,12.4]},
+ {"k":"s","txt":"then design them yourself","size":90,"t":[12.5,17.0]},
+ {"k":"logos","items":[["figma","#F24E1E"],["canva","#00C4CC"],["google","#4285F4"]],"y":1150,"t":[13.4,17.0]},
+ {"k":"b","txt":"DOABLE.","size":200,"col":"#3CDC82","t":[17.2,20.5]},
+ {"k":"s","txt":"3:07 AM. look at","size":100,"t":[20.8,24.8]},
+ {"k":"b","txt":"SLIDE 7","size":200,"col":"#FF3B3B","t":[21.5,24.8],"shake":34}],
+ "end1":"who changed it? →","end2":"DAY 17 DROPS TOMORROW"}

@@ -1,0 +1,14 @@
+{"cards":[
+ {"k":"s","txt":"I won a","t":[0.35,2.15]},
+ {"k":"b","txt":"FREE AI SUB!","size":150,"col":"#3CC85A","t":[0.9,2.15]},
+ {"k":"b","txt":"NOOO!","size":260,"col":"#FF3B3B","t":[2.2,3.3],"shake":36},
+ {"k":"s","txt":"check the sender","t":[3.5,6.2]},
+ {"k":"b","txt":"0 ≠ O","size":230,"col":"#FF3B3B","t":[4.4,6.2]},
+ {"k":"card","y":300,"txt":"Ask AI: “What signs of phishing does this email have?”","col":"#27E0D0","t":[6.6,10.3]},
+ {"k":"lab","txt":"CHECK SENDER","x":80,"y":300,"col":"#FFC233","t":[10.5,15.3]},
+ {"k":"lab","txt":"HOVER LINKS","x":420,"y":440,"col":"#27E0D0","t":[11.4,15.3]},
+ {"k":"lab","txt":"NO PASSWORDS","x":250,"y":580,"col":"#FF5A4A","t":[13.0,15.3]},
+ {"k":"s","txt":"I clicked one","t":[15.5,17.1]},
+ {"k":"b","txt":"YESTERDAY.","size":170,"col":"#FF3B3B","t":[16.2,17.1],"shake":30},
+ {"k":"b","txt":"100%","size":260,"col":"#FF3B3B","t":[18.9,19.46],"shake":36}],
+ "end1":"what did it install? →","end2":"DAY 11 DROPS TOMORROW"}
