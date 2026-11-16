@@ -19,4 +19,13 @@ T,T3=tm["T"],tm["T3"]
 s=s.replace("who sent it? →",c["end1"]).replace("DAY 4 DROPS TOMORROW",c["end2"]).replace("DAY 03<span",f"DAY {D}<span").replace("const T=24.5",f"const T={T}")
 a=s.index('  pop($("a1")'); b=s.index('  const lt=t-22.0')
 s=s[:a]+js+s[b:].replace("const lt=t-22.0",f"const lt=t-{T3}")
+FIT = r"""
+const __M=document.createElement('span'); __M.style.cssText='position:absolute;visibility:hidden;white-space:nowrap;left:-9999px;top:0'; document.body.appendChild(__M);
+function fit(){
+  document.querySelectorAll('.w').forEach(el=>{ if(el.children.length) return; const cs=getComputedStyle(el); const o=el.dataset.fs?parseFloat(el.dataset.fs):parseFloat(cs.fontSize); el.dataset.fs=o;
+    __M.style.font=cs.font.replace(/[\\d.]+px/,o+'px'); __M.style.letterSpacing=cs.letterSpacing; __M.textContent=el.textContent; const w=__M.offsetWidth; if(w>0) el.style.fontSize=Math.min(o,o*940/w)+'px'; });
+  document.querySelectorAll('.lab').forEach(el=>{ const l=parseFloat(el.dataset.l||el.style.left); el.dataset.l=l; const w=el.offsetWidth; el.style.left=(w>0?Math.max(30,Math.min(l,1050-w)):l)+'px'; });
+}
+"""
+s=s.replace('window.frame=function(t){ t=cl(t,0,T-.001);', FIT+'window.frame=function(t){ t=cl(t,0,T-.001); fit();')
 open(f"../mg/day{D}o.html","w").write(s); print("ok",T3,T)
