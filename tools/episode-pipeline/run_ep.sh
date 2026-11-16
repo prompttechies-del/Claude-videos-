@@ -5,5 +5,6 @@ N=$(python3 -c "import json,math;print(math.ceil(json.load(open('v$D/timing.json
 mkdir -p v$D/f v$D/o
 S0=0; while [ -s v$D/f/f$(printf %04d $S0).png ]; do S0=$((S0+1)); done; [ $S0 -gt 0 ] && S0=$((S0-1)) && rm -f v$D/f/f$(printf %04d $S0).png
 [ $S0 -lt $N ] && DAY=$D NFR=$((N-S0)) blender -b -P run$D.py -- BLENDER_EEVEE 720 1280 6 //v$D/f/f# $S0 >> v$D/render.log 2>&1
-[ $(ls v$D/o | wc -l) -gt 10 ] || (cd ../mg && node seek.mjs --src day${D}o.html --out ../ep/v$D/o --scale 2 --fps 24 --workers 1 --png 1 > /dev/null)
+[ $(ls v$D/o | wc -l) -gt 10 ] || (python3 gen_overlay.py $D >/dev/null 2>&1; true) ; [ $(ls v$D/o | wc -l) -gt 10 ] || (cd ../mg && node seek.mjs --src day${D}o.html --out ../ep/v$D/o --scale 2 --fps 24 --workers 1 --png 1 > /dev/null)
 ./finish.sh $D
+[ -f v$D/final.jpg ] && rm -f v$D/redo

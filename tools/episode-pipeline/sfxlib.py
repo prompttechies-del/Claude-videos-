@@ -3,7 +3,7 @@ sr=44100; R=np.random.RandomState(5)
 class Mix:
     def __init__(s,T): s.a=np.zeros(int(sr*T))
     def add(s,t,x,g=1.0):
-        i=int(t*sr); x=x[:max(0,len(s.a)-i)]; s.a[i:i+len(x)]+=x*g
+        i=max(0,int(t*sr)); x=x[:max(0,len(s.a)-i)]; s.a[i:i+len(x)]+=x*g
     def save(s,p):
         a=np.tanh(s.a*1.2)*.5; w=wave.open(p,"w"); w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes((a*32767).astype(np.int16).tobytes()); w.close()
 def whoosh(d=.32):

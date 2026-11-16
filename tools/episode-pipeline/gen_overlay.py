@@ -16,7 +16,7 @@ for i,x in enumerate(c["cards"]):
     elif k=="card": body+=f' <div class="w" id="{id_}" style="top:{x.get("y",250)}px"><span style="display:inline-block;font:40px MO;background:#0b0b10;border:4px solid {col};border-radius:18px;padding:20px 30px;line-height:1.35;white-space:normal;width:860px;text-align:left">{x["txt"]}</span></div>\n'; js+=f'pop($("{id_}"),t,{t0},{t1},{{ry:0,y:-40,from:.8}});\n'
 s=s[:a]+body+s[b:]
 T,T3=tm["T"],tm["T3"]
-s=s.replace("who sent it? →",c["end1"]).replace("DAY 4 DROPS TOMORROW",c["end2"]).replace("DAY 03<span",f"DAY {D}<span").replace("const T=24.5",f"const T={T}")
+s=s.replace("who sent it? →",c["end1"]).replace("DAY 4 DROPS TOMORROW",c["end2"]).replace("DAY 03<span",(("S2 · DAY "+D[2:]) if D.startswith("s2") else "DAY "+D)+"<span").replace("const T=24.5",f"const T={T}")
 a=s.index('  pop($("a1")'); b=s.index('  const lt=t-22.0')
 s=s[:a]+js+s[b:].replace("const lt=t-22.0",f"const lt=t-{T3}")
 FIT = r"""

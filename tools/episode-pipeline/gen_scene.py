@@ -10,6 +10,9 @@ PRE={"maya":[[1.75,-1.9,.75],[1.62,-1.6,.72],[1.5,.3,.68],[1.5,.2,.7],50],
  "wide":[[.55,-2.5,.62],[.55,-2.1,.6],[.55,0,.4],[.55,-.2,.35],38],
  "two":[[.1,-1.9,.4],[.15,-1.6,.38],[.1,-.3,.2],[.1,-.3,.2],45],
  "null":[[.5,-1.4,.3],[.55,-1.15,.3],[.7,-.2,.2],[.7,-.2,.2],45],
+ "wren":[[-.45,-1.6,.55],[-.42,-1.1,.55],[-.38,1.2,.5],[-.38,1.2,.5],42],
+ "wrenroom":[[-.5,-1.8,.55],[-.45,-1.4,.55],[-.5,.15,.5],[-.5,.15,.5],45],
+ "alphacam":[[.9,-1.6,.45],[.95,-1.3,.45],[.95,-.2,.35],[.95,-.2,.35],42],
  "low":[[.1,-1.2,.2],[.15,-1.0,.2],[.3,-.3,.12],[.3,-.3,.12],38]}
 shots=[]
 for a0,a1,name in C["shots"]:
@@ -24,7 +27,13 @@ if "bit" in cast: w(f'bit=Toon("bit",({cast["bit"][0]},{cast["bit"][1]},0),(.04,
 if "null" in cast:
     w('REDE=mat("nullred",(1,.03,.03),.3,em=16,emc=(1,.03,.03))')
     w(f'null=Toon("null",({cast["null"][0]},{cast["null"][1]},0),(.015,.012,.015),scale=.6,eyem=REDE)')
+if "pixel" in cast: w(f'pixel=Toon("pixel",({cast["pixel"][0]},{cast["pixel"][1]},0),(1,.8,.1),scale=.22,eyem=mat("pixeleye",(.1,.1,.1),.3),W=7,D=5,Hh=6)')
+if "alpha" in cast:
+    w('AEYE=mat("alphaeye",(1,.75,.1),.3,em=14,emc=(1,.75,.1))')
+    w(f'alpha=Toon("alpha",({cast["alpha"][0]},{cast["alpha"][1]},0),(.5,.02,.02),scale=.75,eyem=AEYE)')
+if "mirror" in cast: w(f'mirror=Human("mirror",({cast["mirror"][0]},{cast["mirror"][1]},-.15),shirt=(.35,.05,.08),hair=(.02,.02,.02),skin=(.7,.45,.35))')
 if "maya" in cast: w(f'maya=Human("maya",({cast["maya"][0]},{cast["maya"][1]},-.15))')
+if "wren" in cast: w(f'wren=Human("wren",({cast["wren"][0]},{cast["wren"][1]},-.15),shirt=(.9,.9,.92),hair=(.75,.75,.78),skin=(.8,.58,.45))')
 if C.get("infect"):
     w('REDE2=mat("infred",(1,.03,.03),.3,em=18,emc=(1,.03,.03)); V_=clawd.V; DD_=9; W_=13')
     w('rEyes=part("cInfEyes",[((x*V_,-DD_*V_/2-V_*.34,(3+9*.47)*V_),(V_*.95,V_*.6,V_*1.9)) for x in (-3,3)],REDE2,clawd.B,(0,-DD_*V_/2,(3+9*.47)*V_)); rEyes.hide_render=True')
@@ -59,9 +68,10 @@ w("""def dim(l):
 """)
 w("def animate(t,FRi):")
 w("    camera(t,SHOTS)")
-for n in ("clawd","bit","null"):
+for n in ("clawd","bit","null","pixel","alpha"):
     if n in cast:
         w(f"    {n}.R.rotation_euler=(0,0,0); {n}.R.location.x={cast[n][0]}; {n}.R.location.y={cast[n][1]}; {n}.R.scale=(1,1,1); {n}.B.rotation_euler=(0,0,0); {n}.armL.rotation_euler=(0,0,0); {n}.armR.rotation_euler=(0,0,0)")
+if "wren" in cast: w("    wren.R.rotation_euler=(0,0,0); wren.armL.rotation_euler=(0,0,0); wren.armR.rotation_euler=(0,0,0); wren.H.rotation_euler=(0,0,0)")
 if "maya" in cast:
     w(f"    maya.R.rotation_euler=(0,0,0); maya.R.location.x={cast['maya'][0]}; maya.armL.rotation_euler=(0,0,0); maya.armR.rotation_euler=(0,0,0); maya.H.rotation_euler=(0,0,0)")
 # screens timeline
@@ -91,11 +101,14 @@ def toon(n,spec):
     w(f"    {n}.B.location.z={n}.bounce(t,{spec.get('hop',99)},.35,.1)*0+abs(math.sin(t*14))*.012*sp")
     w(f"    {n}.armR.rotation_euler.x=(-1.3-.5*math.sin(t*6))*sp*.9")
     w(f"    {n}.eyes_set(t,{1.3 if n=='clawd' else .7},wide=False)")
-for n in ("clawd","bit","null"):
+for n in ("clawd","bit","null","pixel","alpha"):
     if n in cast: toon(n,cast[n] if isinstance(cast[n],dict) else {})
 if "maya" in cast:
     w("    sp=smooth('maya',t); maya.talk('maya',FRi); maya.armR.rotation_euler.x=(-1.2-.3*math.sin(t*5))*sp; maya.R.location.z=-.15+.03*math.sin(t*1.3)")
     w("    maya.H.rotation_euler.z=.05*math.sin(t*2); maya.eyes.scale.z=.12 if blink(t,.4) else 1")
+if "mirror" in cast: w("    sp=smooth('mirror',t); mirror.talk('mirror',FRi); mirror.armR.rotation_euler.x=(-1.1-.3*math.sin(t*5))*sp; mirror.R.location.z=-.15+.02*math.sin(t*1.1); mirror.R.rotation_euler=(0,0,0)")
+if "wren" in cast:
+    w("    sp=smooth('creator',t); wren.talk('creator',FRi); wren.armR.rotation_euler.x=(-1.1-.3*math.sin(t*5))*sp; wren.R.location.z=-.15+.02*math.sin(t*1.3); wren.eyes.scale.z=.12 if blink(t,.9) else 1")
 # events
 for ev in C.get("events",[]):
     a,b=ev["t"]; who=ev["who"]; act=ev["act"]; v=ev.get("v",1)
@@ -124,6 +137,8 @@ for a,b in C.get("blackout_clawd",[]):
     w(f"    bk=seg(t,{a},{a+.8}); cc=[ORA[i]*(1-bk)+(.01,.01,.01)[i]*bk for i in range(3)]; CMAT.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(*cc,1)")
 for a,b,f0,f1 in C.get("clawd_black",[]):
     w(f"    if {a}<=t<{b}:\n        bk={f0}+({f1}-{f0})*seg(t,{a},{b}); cc=[ORA[i]*(1-bk)+(.01,.01,.01)[i]*bk for i in range(3)]; CMAT.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(*cc,1)")
+for a,b in C.get("alpha_gold",[]):
+    w(f"    ag=seg(t,{a},{a+1.5}); bpy.data.materials['alpham'].node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.5+.45*ag,.02+.6*ag,.02+.05*ag,1)")
 for a,b in C.get("purple_null",[]):
     w(f"    pu=seg(t,{a},{a+1.2}); NM=bpy.data.materials['nullm'].node_tree.nodes['Principled BSDF'].inputs['Base Color']; NM.default_value=(.015+.5*pu,.012+.1*pu,.015+.8*pu,1); REDE.node_tree.nodes['Principled BSDF'].inputs['Emission Color'].default_value=(1-.5*pu,.03+.1*pu,.03+.9*pu,1)")
 if C.get("confetti"):
@@ -131,7 +146,7 @@ if C.get("confetti"):
     w(f"    for o,v0,rt in CONF:\n        tt=max(0,t-{t0}); o.hide_render=t<{t0}; o.location=Vector((.55,.6,.5))+Vector((v0.x*tt*.9,v0.y*tt*.4,v0.z*tt*.6-1.6*tt*tt)); o.rotation_euler=rt*tt")
 if C.get("door"):
     a=C["door"]
-    w(f"    DRH.rotation_euler.z=-1.5*eo(seg(t,{a},{a+.5})); DL.data.energy=900*seg(t,{a},{a+.5}); DLM.node_tree.nodes['Principled BSDF'].inputs['Emission Strength'].default_value=40*seg(t,{a},{a+.5})")
+    w(f"    DRH.rotation_euler.z=-1.5*eo(seg(t,{a},{a+.5})); DL.data.energy={900*C.get('door_gain',1)}*seg(t,{a},{a+.5}); DLM.node_tree.nodes['Principled BSDF'].inputs['Emission Strength'].default_value={40*C.get('door_gain',1)}*seg(t,{a},{a+.5})")
 w("render_loop(animate)")
 open(f"d{D}.py","w").write("\n".join(out)+"\n")
 open(f"run{D}.py","w").write(open("lib.py").read()+"\n"+open(f"d{D}.py").read())
